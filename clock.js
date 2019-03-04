@@ -17,3 +17,5 @@ function init() {
 }
 
 init();
+
+// 변경사항 커밋
