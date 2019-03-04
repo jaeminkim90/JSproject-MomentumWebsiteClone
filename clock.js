@@ -1,7 +1,7 @@
 const clockContainer = document.querySelector(".js-clock"),
     clockTitle = clockContainer.querySelector("h1");
 
-
+// 현재시간 변수에 담기
 function getTime() {
     const date = new Date();
     const minutes = date.getMinutes();
