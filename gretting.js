@@ -1,4 +1,4 @@
-// HTML element 변수 선언
+// greeting에 해당하는 HTML element 참조변수 선언
 const form = document.querySelector(".js-form"),
     input = form.querySelector("input"),
     greeting = document.querySelector(".js-greetings");
@@ -25,8 +25,9 @@ function handleSubmit(event){
 // 저장된 유저 이름이 없을 경우 실행 함수
 function askForName() {
     form.classList.add(SHOWING_CN); //값을 받을수 있도록 form 클래스 노출
-    form.addEventListener("submit", handleSubmit) //엔터키 인식 
+    form.addEventListener("submit", handleSubmit) //엔터키 인식
 }
+
 
 // 저장된 유저네임이 있을 경우 실행 함수
 function paintGreeting(text){
